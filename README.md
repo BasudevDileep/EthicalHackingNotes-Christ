@@ -70,14 +70,122 @@ To delete files, rm is used. A simple rm file.txt deletes a file, while rm -r fo
 
 Using these commands, users can fully manage their file system from the terminal with speed and precision. Remember, using the Tab key for auto-completion and adding options to commands (like -l, -r, or -a) can save a lot of time and reduce typing errors.
 
-DAY 4
+### 1. *IPv4 (Internet Protocol version 4)*
 
-Linux provides a powerful set of commands to manage files and directories efficiently. To begin with, you can navigate the file system using commands like pwd, which prints the current working directory, and cd, which is used to change directories. For instance, cd Documents moves into the Documents folder, cd .. moves up to the parent directory, and simply typing cd brings you back to your home directory.
+* *Definition*: IPv4 is the fourth version of the Internet Protocol used to identify devices on a network using an addressing system.
+* *Address Format*: 32-bit address (e.g., 192.168.1.1)
+* *Total Addresses: About **4.3 billion* unique addresses.
+* *Structure: Written in **dot-decimal notation* (four numbers separated by dots).
+* *Limitation*: Because of the growing number of internet devices, IPv4 addresses are running out.
 
-To view files and directories in the current location, you can use ls. Adding options enhances its functionality: ls -l shows detailed information including permissions and file sizes, ls -a reveals hidden files, ls -lh presents human-readable sizes, and ls -R lists contents recursively. Creating files and directories is also straightforward. The touch command is used to create empty files (e.g., touch file.txt), while mkdir creates new directories. For creating nested directories in one go, mkdir -p dir1/dir2 is used.
+---
 
-Copying and moving files is handled with cp and mv. For example, cp file.txt backup.txt makes a copy of a file, and cp -r dir1 dir2 copies an entire directory recursively. The mv command is used to move or rename files and directories. So, mv old.txt new.txt renames a file, and mv file.txt /home/user/docs moves it to another location.
+### 2. *IPv6 (Internet Protocol version 6)*
 
-To delete files, rm is used. A simple rm file.txt deletes a file, while rm -r folder/ removes a directory and all its contents. To remove an empty directory, rmdir is used. If you want to delete files without confirmation prompts, rm -f will force the deletion. Additionally, the stat command displays detailed file information such as size and timestamps, while file identifies the type of file based on its content.
+* *Definition*: IPv6 is the newer version of the Internet Protocol designed to replace IPv4.
+* *Address Format*: 128-bit address (e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334)
+* *Total Addresses: Around **340 undecillion* (virtually unlimited).
+* *Structure: Written in **hexadecimal* and separated by colons.
+* *Advantage*: Solves the IPv4 exhaustion problem and offers better routing and security features.
 
-Using these commands, users can fully manage their file system from the terminal with speed and precision. Remember, using the Tab key for auto-completion and adding options to commands (like -l, -r, or -a) can save a lot of time and reduce typing errors.
+---
+
+### 3. *MAC ID (Media Access Control Address)*
+
+* *Definition: A MAC ID (or MAC address) is a **unique hardware identifier* assigned to a network interface card (NIC) by the manufacturer.
+* *Format*: 48-bit address, usually shown as 00:1A:2B:3C:4D:5E
+* *Purpose: Used for identifying devices within a **local network (LAN)*.
+* *Cannot Be Changed*: It's a physical address tied to the device (though it can be spoofed).
+
+---
+
+### 4. *TCP (Transmission Control Protocol)*
+
+* *Definition: TCP is a **connection-oriented* protocol that ensures *reliable communication* between two devices.
+* *Features*:
+
+  * Data is sent in a sequence.
+  * Ensures data reaches correctly (error checking).
+  * Slower but *more reliable*.
+* *Examples: Used in applications like **web browsing (HTTP/HTTPS), **email (SMTP), and **file transfers (FTP)*.
+
+---
+
+### 5. *UDP (User Datagram Protocol)*
+
+* *Definition: UDP is a **connectionless* protocol used for fast, *non-reliable communication*.
+* *Features*:
+
+  * No error checking or guaranteed delivery.
+  * Much *faster* than TCP.
+* *Examples: Used in **video streaming, **online gaming, and **VoIP (Voice over IP)*.
+
+---
+
+### Comparison Table:
+
+| Feature     | TCP                        | UDP                         |
+| ----------- | -------------------------- | --------------------------- |
+| Connection  | Connection-oriented        | Connectionless              |
+| Speed       | Slower                     | Faster                      |
+| Reliability | High (guaranteed delivery) | Low (no delivery guarantee) |
+| Use Case    | Email, Web browsing        | Gaming, Streaming           |
+
+---
+### 🔍 *Reconnaissance in Cybersecurity*
+
+*Definition*:
+*Reconnaissance* is the *first phase* of the ethical hacking or cyberattack lifecycle. It involves *gathering information* about a target system, network, or organization *before launching an attack*. Think of it like a thief studying a building before breaking in.
+
+---
+
+### 🧠 *Purpose of Reconnaissance*
+
+* To *understand the target's environment*
+* Identify *vulnerabilities, **open ports, **IP addresses, **technologies used*
+* Reduce chances of *detection* during the actual attack
+* Plan effective attacks or penetration tests
+
+---
+
+### 🛠 *Types of Reconnaissance*
+
+| Type              | Description                                                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| *Passive Recon* | Collecting info *without interacting* directly with the target. Example: looking at social media, WHOIS data, Google searches. |
+| *Active Recon*  | Directly engaging with the target to gather information. Example: scanning networks, pinging devices, port scanning.             |
+
+---
+
+### 🔧 *Common Recon Tools*
+
+| Tool             | Use                                                            |
+| ---------------- | -------------------------------------------------------------- |
+| *Nmap*         | Network scanning, open ports, services                         |
+| *Wireshark*    | Packet analysis (network traffic)                              |
+| *theHarvester* | Email, subdomain, and employee information gathering           |
+| *Maltego*      | Visual link analysis for people, companies, domains, and IPs   |
+| *Google Dorks* | Using advanced search techniques to find sensitive information |
+
+---
+
+### 🧾 *Examples of Information Collected*
+
+* IP address ranges
+* Subdomains
+* Open ports
+* Software versions
+* Employee names or emails
+* DNS records
+
+---
+
+### ⚠ *Why It Matters*
+
+In ethical hacking, reconnaissance helps in:
+
+* Finding weak points before an attacker does
+* Strengthening defenses proactively
+* Simulating real-world attack planning for better security
+
+---
